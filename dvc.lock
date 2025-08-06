@@ -27,8 +27,8 @@ stages:
     deps:
     - path: data/iris_v2.csv
       hash: md5
-      md5: 2a7dee4e2865ece7309dac7087325f2c
-      size: 12565
+      md5: 2205662056b64164c8f3df2d4b296e7b
+      size: 12483
     - path: scripts/train.py
       hash: md5
       md5: b3c75c8472af26753dcd0f177c1a81b1
@@ -36,7 +36,7 @@ stages:
     outs:
     - path: models/model_v2.pkl
       hash: md5
-      md5: a87ad36dc952cd0a2e59a4811c0718e9
+      md5: 12b8cdd9bdbb39c84a1c578c5451f8fc
       size: 1423
     - path: results/metrics_v2.txt
       hash: md5
