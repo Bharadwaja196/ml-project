@@ -21,3 +21,7 @@ stages:
 metrics:
   - results/metrics_v1.txt
   - results/metrics_v2.txt
+
+metrics:
+  - results/metrics_v1.txt
+  - results/metrics_v2.txt
