@@ -1,0 +1,23 @@
+stages:
+  train_v1:
+    cmd: python scripts/train.py data/iris_v1.csv models/model_v1.pkl 
+      results/metrics_v1.txt
+    deps:
+    - data/iris_v1.csv
+    - scripts/train.py
+    outs:
+    - models/model_v1.pkl
+    - results/metrics_v1.txt
+  train_v2:
+    cmd: python scripts/train.py data/iris_v2.csv models/model_v2.pkl 
+      results/metrics_v2.txt
+    deps:
+    - data/iris_v2.csv
+    - scripts/train.py
+    outs:
+    - models/model_v2.pkl
+    - results/metrics_v2.txt
+
+metrics:
+  - results/metrics_v1.txt
+  - results/metrics_v2.txt
